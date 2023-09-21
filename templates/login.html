@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>INICIAR SESION</title>
+        <link rel="stylesheet" href="../static/css/login.css">
+    </head>
+    <body>
+        
+
+
+
+
+        <form class="form" method="POST" action="{{ url_for('main.login') }}">
+            <div class="box_1">
+                <img src="../static/img/logo_Form.png" alt="Logo de la pagina" width="100px">
+            </div>
+            <label>Usuario</label>
+            <input class="controls"  type="email" name="username" value="" >
+            <label>Contraseña</label>
+            <input class="controls" type="password" name="password" value="" >
+            <button type="submit" class="button">Ingresar</button>
+            <a href="index.html"><input class="button" type="submit" name="Volver al inicio" value="Volver al inicio"></a>
+        </form>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    
+                    <div class="contact-info">
+                        <h4>Contacto</h4>
+                        <p>Dirección: Cra. 126a #138-29, Bogotá</p>
+                        <p>Teléfono: 3152595833</p>
+                    </div>
+                    <div class="social-media">
+                        <h4>Síguenos en las Redes Sociales</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/opticasvision2020colombia/"><img src="img/facebook-icon.png" alt="Facebook"></a></li>
+                            
+                            <li><a href="https://www.instagram.com/opticas.2020/"><img src="img/instagram-icon.png" alt="Instagram"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="Copyright">
+                    <p>Copyright@ 2023 Derechos Reservados</p>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>

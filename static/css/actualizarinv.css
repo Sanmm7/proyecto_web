@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+/* Diseño logo y menu de la pagina */
+.encabezado {
+    width: 100%;
+    height: 100px;
+    background: #2165BF;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-around;
+    position: relative; /* Añade position relative */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    z-index: 1; /* Añade un índice z superior para que esté sobre el SVG */
+}
+
+.titulo {
+    margin-left: -14%;
+    color: white;
+    font-family: 'MS Reference Sans Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    position: relative; /* Añade position relative */
+    
+}
+
+
+/* Añadir z-index al SVG */
+.svg-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0; /* Añade un índice z inferior para que esté detrás del contenido */
+}
+.caja {
+    display:flex;
+    gap:20px;
+    z-index: 1;
+}
+
+.caja .link {
+    text-decoration:none;
+    color:#FFF;
+    padding:5px;
+    border-radius:5px;
+    transition:1s;
+    font-size:20px;
+    
+}
+/* contenedor de la imagen */
+.body__3_1_1 img {
+    height:00px;
+    width:300px;
+    object-fit:contain;
+
+}
+
+.form-regis{
+    width: 400px;
+    background: #2165BF;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    margin-bottom: 70px;
+}
+
+.form-regis h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls{
+    width: 100%;
+    background: #2165BF;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: black;
+    border: none; /* Elimina todos los bordes */
+    border-bottom: 0.1em solid #fff; /* Agrega solo un borde inferior */
+    border-radius: 0; /* Elimina la esquina redondeada predeterminada */
+    outline: none; /* Elimina el resaltado del borde al hacer clic */
+    color: #fff;
+    font-family: sans-serif;
+    
+}
+input::placeholder {
+    color: #ffffff31; /* Cambia el color a gris, por ejemplo */
+    font-family: 'calibri';
+    font-size: 10px;
+}
+
+/* Estilos normales del botón */
+button {
+    width: 100%;
+    background: white;
+    border: none;
+    padding: 12px;
+    color: #000;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al estilo de puntero al pasar por encima */
+    transition: background-color 0.4s ease,  border-radius 0.4s ease; /* Agrega una transición suave a la propiedad background-color */   
+}
+
+/* Estilos cuando el cursor está sobre el botón */
+button:hover {
+    background: #45a533; /* Cambia el color de fondo al pasar por encima */
+    color: #fff;
+    border-radius: 18px;
+}
+
+.link {
+    margin-left: 2%;
+    text-decoration: none;
+    color: #98c5ff;
+}
+.link:hover{
+    color: #000;
+}
+.laste{
+    color: white;
+}
+.footer {
+    margin-top: 5%;
+    width: 100%;
+    height: 150px;
+    background: #303030;
+    color: #FFF;
+    text-align:center;
+    font-size:15px;
+}
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color del texto */
+    padding: 30px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    max-width: 150px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.contact-info,
+.social-media {
+    flex-basis: calc(50% - 20px);
+    margin-right: 20px;
+}
+
+.contact-info h4,
+.social-media h4 {
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media img {
+    max-width: 30px; /* Ajusta el tamaño de los iconos de redes sociales */
+}

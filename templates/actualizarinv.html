@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Formulario</title>
+        <link rel="stylesheet" href="../static/css/actualizarinv.css">
+    </head>
+    <body>
+
+        <header class="encabezado"  style="position: relative;">
+            
+            <svg width="700" height="100px" viewBox="0 0 994 155" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; top: 0; right: 0;">
+                <g clip-path="url(#clip0_247_3)">
+                    <path d="M1043.07 -46.3763V148.324C1043.07 152.011 1039.11 155 1034.22 155L10.4824 155C4.0885 155 -0.151001 150.046 3.00159 145.85C67.7826 59.61 294.553 44.3666 413.238 37.2519C470.01 33.8484 518.435 29.2238 554.683 23.8715C677.816 5.69061 738.831 -37.0093 841.135 -83.8405C948.988 -133.213 1020.83 -73.1369 1043.07 -46.3763Z" fill="#4DB73B" fill-opacity="0.95"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_247_3">
+                        <rect width="1042.63" height="257.711" fill="white" transform="matrix(-1 0 0 -1 1043.07 155)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            
+            <div class="box">
+                <div class="box_1">
+                    <img src="img/logo_adobe_express.png" alt="Logo de la pagina" width="100px">
+                </div>
+                <div class="nav"></div>
+                <div class="caja__7"><i class="fas fa-bars"></i></div>        
+            </div>
+            <div class="titulo"><h1>Optiplus</h1></div>
+            
+            <!--Aqui se encuentran los botones del menu con sus respectivas redirecciones cada una-->
+            <div class="caja">
+                <div class="caja__1"><a class="link" href="Index.html">Ayuda</a></div>
+                <div class="caja__1"><a class="link" href="Index.html">Acerca De</a></div>
+                <div class="caja__1"><a class="link" href="Index.html">Inicio</a></div>
+            </div>
+        </header>
+        
+        <section class="form-regis">
+            <h4>Actualizar</h4>
+            <form method="POST" action="{{ url_for('actualizar_producto', id=producto.id_Pr) }}">
+                <!-- Campos para los nuevos valores -->
+                <label>Nuevo Tipo
+                <input class="controls" type="text" name="tipo"  value="{{ producto.tipo }}">
+                <label>Nuevo Lente
+                <input class="controls" type="text" name="lente"  value="{{ producto.lente }}">
+                <label>Nueva Cantidad
+                <input class="controls" type="number" name="cantidad"  value="{{ producto.cantidad }}">
+                <div>
+                <button type="submit">Actualizar</button>
+                <div>
+            </form>
+            
+            
+            
+            <!-- Dentro del encabezado (.encabezado) -->
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    
+                    <div class="contact-info">
+                        <h4>Contacto</h4>
+                        <p>Dirección: Cra. 126a #138-29, Bogotá</p>
+                        <p>Teléfono: 3152595833</p>
+                    </div>
+                    <div class="social-media">
+                        <h4>Síguenos en las Redes Sociales</h4>
+                        <ul>
+                            <li><a href="https://www.facebook.com/opticasvision2020colombia/"><img src="img/facebook-icon.png" alt="Facebook"></a></li>
+                            
+                            <li><a href="https://www.instagram.com/opticas.2020/"><img src="img/instagram-icon.png" alt="Instagram"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="Copyright">
+                    <p>Copyright@ 2023 Derechos Reservados</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

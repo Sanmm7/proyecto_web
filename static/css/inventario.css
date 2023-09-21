@@ -1,0 +1,72 @@
+/* Estilos para la tabla */
+.container-table {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Estilos para los botones de modificar y eliminar */
+.btn-modificar {
+    background-color: #2165BF; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px; /* Espacio a la derecha del botón */
+}
+
+.btn-eliminar {
+    background-color: #FF0000; /* Color rojo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-modificar:hover, .btn-eliminar:hover {
+    background-color: #4CD73B; /* Cambio de color al hacer hover */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background: linear-gradient(to right, #2165BF, #4CD73B); /* Combinación de colores azul y verde */
+    color: white;
+    padding: 15px 30px; /* Aumentar el espacio vertical y horizontal */
+    display: flex;
+    justify-content: space-between; /* Mover el logo y el botón a los lados */
+    align-items: center; /* Centrar verticalmente */
+}
+
+/* Estilos para el botón "Salir" */
+.volver-button {
+    background-color: #2165BF; /* Color azul */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio a la derecha del botón */
+}
+
+.volver-button:hover {
+    background-color: #5660e9; /* Cambio a verde al hacer hover */
+    text-decoration: none;
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 10px; /* Ancho del logo más pequeño */
+    height: auto; /* Alto ajustado automáticamente */
+    margin-left: 10px; /* Espacio a la izquierda del logo */
+}
+
+/* Estilos para el footer */
+footer {
+    padding-top: 4%;
+    background: linear-gradient(to right, #2165BF, #4CD73B);
+    margin-top: 10%;
+}
+
+.link-grayish {
+    color: #d3d3d3; /* Color gris para los íconos de redes sociales */
+    margin-right: 10px; /* Espacio entre los íconos */
+}
